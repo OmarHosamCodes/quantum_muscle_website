@@ -3,7 +3,7 @@ import 'package:quantum_muscle_website/library.dart';
 class ColorConstants {
   //? Main
 
-  static const Color primaryColor = Color(0xFF191919);
+  static const Color primaryColor = Color(0xFF131313);
   static const Color accentColor = Color(0xFF5a189a);
   static const Color disabledColor = Color(0xFF240046);
   static const Color backgroundColor = Color(0xFF0F0F0F);

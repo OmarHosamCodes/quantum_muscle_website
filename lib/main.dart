@@ -7,13 +7,13 @@ void main() {
 class QuantumMuscleWebsite extends StatelessWidget {
   const QuantumMuscleWebsite({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'Quantum Muscle Website',
       theme: ThemeController.theme,
-      home: const Home(),
+      routerConfig: RoutingRepository.router,
     );
   }
 }

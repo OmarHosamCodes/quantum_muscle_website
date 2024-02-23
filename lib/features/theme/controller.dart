@@ -2,7 +2,7 @@ import 'package:quantum_muscle_website/library.dart';
 
 class ThemeController {
   static ThemeData theme = ThemeData(
-    scaffoldBackgroundColor: Colors.transparent,
+    scaffoldBackgroundColor: ColorConstants.backgroundColor,
     primaryColor: ColorConstants.primaryColor,
     colorScheme: const ColorScheme.light(
       primary: ColorConstants.primaryColor,
@@ -39,17 +39,17 @@ class ThemeController {
         ),
       ),
     ),
-    scrollbarTheme: ScrollbarThemeData(
-      thumbVisibility: MaterialStateProperty.all<bool>(true),
-      thumbColor: MaterialStateProperty.all<Color>(
-        ColorConstants.disabledColor,
-      ),
-      trackColor: MaterialStateProperty.all<Color>(
-        ColorConstants.disabledColor,
-      ),
-      radius: const Radius.circular(10),
-      thickness: MaterialStateProperty.all<double>(8),
-    ),
+    // scrollbarTheme: ScrollbarThemeData(
+    //   thumbVisibility: MaterialStateProperty.all<bool>(true),
+    //   thumbColor: MaterialStateProperty.all<Color>(
+    //     ColorConstants.disabledColor,
+    //   ),
+    //   trackColor: MaterialStateProperty.all<Color>(
+    //     ColorConstants.disabledColor,
+    //   ),
+    //   radius: const Radius.circular(10),
+    //   thickness: MaterialStateProperty.all<double>(8),
+    // ),
     drawerTheme: const DrawerThemeData(
       backgroundColor: ColorConstants.disabledColor,
       shape: RoundedRectangleBorder(),
