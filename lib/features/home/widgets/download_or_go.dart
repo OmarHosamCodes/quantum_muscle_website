@@ -15,7 +15,10 @@ class DownloadOrGo extends StatelessWidget {
             'assets/icon/icon.png',
             height: 200,
             width: 200,
-          ),
+          ).animate().fade(
+                duration: HomeConstants.mainDuration,
+                curve: Curves.easeInOutCubic,
+              ),
         ),
         Flexible(
           child: Column(
@@ -28,7 +31,11 @@ class DownloadOrGo extends StatelessWidget {
                   text: 'Web App',
                   onPressed: () {},
                 ),
-              ),
+              ).animate().fade(
+                    delay: HomeConstants.mainDuration,
+                    duration: HomeConstants.mainDuration,
+                    curve: Curves.easeInOutCubic,
+                  ),
               QmGap.vMedium(),
               SizedBox(
                 width: double.infinity,
@@ -36,7 +43,11 @@ class DownloadOrGo extends StatelessWidget {
                   icon: EvaIcons.smartphoneOutline,
                   text: 'Android App',
                   onPressed: () {},
-                ),
+                ).animate().fade(
+                      delay: HomeConstants.mainDuration * 2,
+                      duration: HomeConstants.mainDuration,
+                      curve: Curves.easeInOutCubic,
+                    ),
               ),
             ],
           ),

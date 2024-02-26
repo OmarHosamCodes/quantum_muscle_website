@@ -26,6 +26,7 @@ export 'features/routing/repository.dart';
 //? Constants
 export 'features/theme/constants.dart';
 export 'features/routing/constants.dart';
+export 'features/home/constants.dart';
 
 //? Controllers
 export 'features/theme/controller.dart';
@@ -36,3 +37,4 @@ export 'features/theme/controller.dart';
 export 'package:flutter/material.dart';
 export 'package:go_router/go_router.dart';
 export 'package:eva_icons_flutter/eva_icons_flutter.dart';
+export 'package:flutter_animate/flutter_animate.dart';

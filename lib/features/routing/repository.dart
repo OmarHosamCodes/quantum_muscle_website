@@ -3,6 +3,7 @@ import 'package:quantum_muscle_website/library.dart';
 class RoutingRepository {
   static GoRouter router = GoRouter(
     initialLocation: Routes.home,
+    routerNeglect: true,
     routes: [
       ShellRoute(
         builder: (context, state, child) => Routing(

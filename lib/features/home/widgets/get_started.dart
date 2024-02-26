@@ -12,7 +12,11 @@ class GetStarted extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        QmSeparator.textOnRight('Get Started'),
+        const QmSeparator.textOnRight('Get Started').animate().fade(
+              delay: HomeConstants.mainDuration * 3,
+              duration: HomeConstants.mainDuration,
+              curve: Curves.easeInOutCubic,
+            ),
         QmGap.vMedium(),
         const Padding(
           padding: EdgeInsets.all(8),
@@ -21,7 +25,11 @@ class GetStarted extends StatelessWidget {
                 """Quantum Muscle is a fitness app that uses quantum computing 'Wink Wink' to generate the most efficient workout plan for you.""",
             isHeadline: true,
           ),
-        ),
+        ).animate().fade(
+              delay: HomeConstants.mainDuration * 4,
+              duration: HomeConstants.mainDuration,
+              curve: Curves.easeInOutCubic,
+            ),
         Padding(
           padding: const EdgeInsets.all(8),
           child: SizedBox(
@@ -38,7 +46,11 @@ class GetStarted extends StatelessWidget {
                     fallbackHeight: 100,
                     fallbackWidth: 100,
                   ),
-                ),
+                ).animate().fade(
+                      delay: HomeConstants.mainDuration * 5,
+                      duration: HomeConstants.mainDuration,
+                      curve: Curves.easeInOutCubic,
+                    ),
                 Positioned(
                   top: height * 0.1,
                   right: 50,
@@ -48,7 +60,11 @@ class GetStarted extends StatelessWidget {
                     fallbackHeight: 100,
                     fallbackWidth: 100,
                   ),
-                ),
+                ).animate().fade(
+                      delay: HomeConstants.mainDuration * 6,
+                      duration: HomeConstants.mainDuration,
+                      curve: Curves.easeInOutCubic,
+                    ),
                 Positioned(
                   bottom: 0,
                   right: 0,
@@ -57,7 +73,11 @@ class GetStarted extends StatelessWidget {
                     fallbackHeight: 100,
                     fallbackWidth: 100,
                   ),
-                ),
+                ).animate().fade(
+                      delay: HomeConstants.mainDuration * 7,
+                      duration: HomeConstants.mainDuration,
+                      curve: Curves.easeInOutCubic,
+                    ),
               ],
             ),
           ),

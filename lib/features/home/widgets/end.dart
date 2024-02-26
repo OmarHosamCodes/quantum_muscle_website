@@ -7,6 +7,10 @@ class End extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return QmSeparator.textOnMiddle('End');
+    return const QmSeparator.textOnMiddle('End').animate().fade(
+          delay: HomeConstants.mainDuration * 11,
+          duration: HomeConstants.mainDuration,
+          curve: Curves.easeInOutCubic,
+        );
   }
 }

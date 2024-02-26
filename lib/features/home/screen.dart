@@ -2,6 +2,7 @@ import 'package:quantum_muscle_website/library.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
+  static final mainDuration = 300.milliseconds;
 
   @override
   Widget build(BuildContext context) {

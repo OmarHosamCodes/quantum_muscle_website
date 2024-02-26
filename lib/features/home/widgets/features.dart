@@ -10,7 +10,11 @@ class Features extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        QmSeparator.textOnLeft('Features'),
+        const QmSeparator.textOnLeft('Features').animate().fade(
+              delay: HomeConstants.mainDuration * 8,
+              duration: HomeConstants.mainDuration,
+              curve: Curves.easeInOutCubic,
+            ),
 
         QmGap.vMedium(),
 
@@ -37,7 +41,11 @@ class Features extends StatelessWidget {
                 ],
               ),
             ),
-          ),
+          ).animate().fade(
+                delay: HomeConstants.mainDuration * (9 + i),
+                duration: HomeConstants.mainDuration,
+                curve: Curves.easeInOutCubic,
+              ),
       ],
     );
   }
